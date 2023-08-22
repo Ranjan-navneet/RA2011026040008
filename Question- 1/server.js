@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 app.get('/numbers',async (req,res)=>{
     const urls = req.query.url;
-    const timeout = 500/urls.length;
+    const timeout = 100/urls.length;
     var numbers = []
     for(var i of urls){
         try{
